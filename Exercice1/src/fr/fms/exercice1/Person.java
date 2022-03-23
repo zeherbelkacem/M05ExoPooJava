@@ -1,6 +1,6 @@
 package fr.fms.exercice1;
 
-public class Person {
+public abstract class Person {
 	private String firstName;
 	private String lastName;
 	private int age;
@@ -100,5 +100,6 @@ public class Person {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	public abstract double renumeration();
 
 }

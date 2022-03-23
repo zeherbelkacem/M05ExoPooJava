@@ -94,14 +94,20 @@ public class City {
 //		return "City [name=" + name + ", country=" + country + ", population=" + population + "]";
 //	}
 	
+//	@Override
+//	public String toString() {
+//		if (this.population <= 0) {
+//			return "Ville de naissance: "+name+", "+country;
+//		}
+//		return "Ville de naissance: "+name+", "+country+", population "+name+" "+population+ " inhabitants";
+//	}
+
+	//question3.5
 	@Override
 	public String toString() {
-		if (this.population <= 0) {
-			return "Ville de naissance: "+name+", "+country;
-		}
-		return "Ville de naissance: "+name+", "+country+", population "+name+" "+population+ " inhabitants";
+		return "Ville de naissance: "+name+", "+country;
 	}
-
+	
 	//question avant 1.9
 //	@Override
 //	public String toString() {

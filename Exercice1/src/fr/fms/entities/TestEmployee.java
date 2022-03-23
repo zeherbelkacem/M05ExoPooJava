@@ -1,6 +1,9 @@
 package fr.fms.entities;
 
+import java.util.Scanner;
+
 import fr.fms.exercice1.City;
+import fr.fms.exercice1.Person;
 
 public class TestEmployee {
 
@@ -29,9 +32,25 @@ public class TestEmployee {
 		 * pourcentage du chiffre d’affaires par mois puis tester là !
 		 */
 		System.out.println("\n-----------------------------Exercice 3.3------------------------------------");
-		Commerciale dupont = new Commerciale("DUPONT", "Remy", 28, "de la rue de rsiers à Toulouse", new City("Limoges", "France", 250000), "FMS-EA", 0.5);
-		//Employee dupont = new Commerciale("DUPONT", "Remy", 28, "de la rue de rsiers à Toulouse", new City("Limoges", "France", 250000), "FMS-EA", 0.5);
+		Commerciale dupont = new Commerciale("DUPONT", "Remy", 28, "de la rue de rsiers à Toulouse",
+				new City("Limoges", "France", 250000), "FMS-EA", 0.5);
+		// Person dupont = new Commerciale("DUPONT", "Remy", 28, "de la rue de rsiers
+		// à Toulouse", new City("Limoges", "France", 250000), "FMS-EA", 0.5);
 		System.out.println(dupont);
-	}
 
+		System.out.println("\n-----------------------------Exercice 3.4------------------------------------");
+		/*
+		 * Veiller à empêcher l’utilisateur de faire des mauvaises saisies (salaire ou
+		 * remise négative par ex), dans ce cas, mettez des valeurs minimums par défaut
+		 * que l’on pourra aisément modifier par la suite, tester pour vérifier si ça
+		 * répond aux besoins.
+		 */
+
+		// dupont.setCaPerCent(-5);
+		System.out.println(dupont);
+
+		System.out.println("\n-----------------------------Exercice 3.4------------------------------------");
+		/* Faites en sorte que la population d’une ville n’apparaisse plus dorénavant */
+		System.out.println("population: " + musk.getCity().getPopulation());
+	}
 }

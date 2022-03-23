@@ -26,4 +26,9 @@ public class Employee extends Person {
 		return super.toString() + ", entreprise:" + entreprise + ", salary:" + salary;
 	}
 
+	@Override
+	public double renumeration() {
+		return this.salary*0.8;
+	}
+
 }
