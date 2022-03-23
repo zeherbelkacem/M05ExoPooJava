@@ -51,11 +51,27 @@ public class Person {
 //				+ "]";
 //	}
 
+	//question 1.9
+//	@Override
+//	public String toString() {
+//		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", address=" + address
+//				+ "] Born" + city;
+//	}
+	
+	public City getCity() {
+		return city;
+	}
+
+	public void setCity(City city) {
+		this.city = city;
+	}
+
+	//question2.0
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", address=" + address
-				+ "] Born" + city;
+		return firstName+", "+lastName+", "+age+" ans, habitant "+address+", "+ city;
 	}
+
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;

@@ -88,11 +88,21 @@ public class City {
 				.println("ville de " + getName() + " en " + getCountry() + " ayant " + getPopulation() + " habitants");
 	}
 
+	//question1.9
+//	@Override
+//	public String toString() {
+//		return "City [name=" + name + ", country=" + country + ", population=" + population + "]";
+//	}
+	
 	@Override
 	public String toString() {
-		return "City [name=" + name + ", country=" + country + ", population=" + population + "]";
+		if (this.population <= 0) {
+			return "Ville de naissance: "+name+", "+country;
+		}
+		return "Ville de naissance: "+name+", "+country+", population "+name+" "+population+ " inhabitants";
 	}
 
+	//question avant 1.9
 //	@Override
 //	public String toString() {
 //		return "<< ville de " + name + " en " + country + " ayant " + population + " habitants >>";
